@@ -1,0 +1,26 @@
+import java.io.*;
+class Main
+{
+	public static void main(String args[ ]) throws IOException
+	{
+		PrintStream ps = new PrintStream(System.out);
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(isr);
+		String name;
+		int tl,eng,ctd,java,pyt,tot;
+		float avg;
+		ps.println("Enter Your Name");
+		name = br.readLine();
+		ps.println("");
+		tl = Integer.parseInt(br.readLine());
+		eng = Integer.parseInt(br.readLine());
+		ctd = Integer.parseInt(br.readLine());
+		java = Integer.parseInt(br.readLine());
+		pyt = Integer.parseInt(br.readLine());
+		tot=tl+eng+ctd+java+pyt;
+		ps.print("Your Name : " + name);
+		ps.println("total of the stutdent "+tot);
+		avg=tot/5;
+		ps.println("Avarage of the student"+avg);
+	}	
+}
