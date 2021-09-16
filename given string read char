@@ -1,0 +1,9 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		String s="Strings are immutable";
+		char result =s.charAt(10);
+		System.out.println(result);
+	}
+}
