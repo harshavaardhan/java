@@ -1,0 +1,20 @@
+class Interest
+{
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the Principal: ");
+        float principle=sc.nextFloat();
+        
+        System.out.print("Enter the Time(in months): ");
+        float time=sc.nextFloat();
+        
+        System.out.print("Enter the Rate(in percentage): ");
+        float rate=sc.nextFloat();
+        
+        float si=principle*rate*time/100;
+        System.out.println("Simple Interest for the given values is : "+si);
+        
+    }
+}
