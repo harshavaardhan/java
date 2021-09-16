@@ -1,0 +1,13 @@
+class OddEven
+{
+    public static void main()
+    {
+        System.out.println("Enter a number:");
+        Scanner nandhu = new Scanner(System.in);
+        int number=nandhu.nextInt();
+        if(number%2==0)
+            System.out.println(number+" is an Even Number");
+        else
+            System.out.println(number+" is an Odd Number");
+    }
+}
