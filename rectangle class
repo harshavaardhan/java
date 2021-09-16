@@ -1,0 +1,21 @@
+public class Rectangle
+{
+    int l=10;
+    int b=20;
+    void Area()
+    {
+        int a=l*b;
+        System.out.println("area of rectangle="+a);
+        
+    }
+    void Breadth()
+    {
+        int p=2*(l+b);
+        System.out.println("perimeter of rectnagle="+p);
+    }
+public static void main(String[] args) {
+    Rectangle fobj = new Rectangle();
+		fobj.Area();
+		fobj.Breadth();
+	}
+}
