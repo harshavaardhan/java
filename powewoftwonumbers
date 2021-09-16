@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);
+    System.out.println("Enter numbers");
+    int x = myObj.nextInt();
+    int y = myObj.nextInt();
+    int q=1;
+    int p=1;
+    for(int i=1;i<=y;i++){
+        q=q*x;
+    }
+    System.out.println("x^y:"+q);
+    for(int i=1;i<=x;i++){
+        p=p*y;
+    }
+    System.out.println("y^x:"+p);
+  }
+}
