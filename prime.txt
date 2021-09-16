@@ -1,0 +1,24 @@
+class Prime
+{
+    public static void main()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number to be checked");
+        int number=sc.nextInt();
+        if(number==2)
+            System.out.println("It is a prime number");
+        else if(number%2==0)
+            System.out.println("It is not a prime number");
+        else
+        {
+            double sqrt=Math.sqrt(number);
+            for(int i=3;i<sqrt;i+=2)
+                if(number%i==0)
+                {
+                    System.out.println("Not a prime number");
+                    return;
+                }
+            System.out.println("Prime number");
+        }
+    }
+}
