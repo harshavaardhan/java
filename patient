@@ -1,0 +1,28 @@
+class patient
+{
+	String name;
+	double height,weight;
+
+	patient(String name,double height,double weight)
+	{
+		this.name=name;
+		this.height=height;
+		this.weight=weight;
+	}
+
+	double bmi()
+	{
+		double val=((weight)/(height*height))*703;
+		return val;
+	}
+}
+
+class patients
+{
+	public static void main(String args[])
+	{
+		patient ptobj = new patient("abc",120,450);
+		double bmival=ptobj.bmi();
+		System.out.println("The bmi is: "+bmival);
+	}
+}
