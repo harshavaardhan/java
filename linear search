@@ -1,0 +1,22 @@
+class Main {
+  public static void main(String[] args) {
+
+    int[] num = {1,4,34,56,7};
+    int toFind =Integer.parseInt( args[0]);//give the number in the argument to find 
+    boolean found = false;
+    int index=0;
+    for (int i=0;i<num.length;i++)//to search the position of the elements
+    {
+      if (num[i] == toFind) {
+        found = true;
+        index=i;
+        break;
+      }
+    }
+    
+    if(found)  //if it founded it will print the position of element or not funde print -1
+      System.out.println(toFind+" is found at "+ index);
+    else
+      System.out.println(  "-1");
+  }
+}
